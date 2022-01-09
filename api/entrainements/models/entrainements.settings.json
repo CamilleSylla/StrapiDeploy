@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "entrainements",
+  "info": {
+    "name": "Entrainements"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "couleur": {
+      "type": "string"
+    }
+  }
+}

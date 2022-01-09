@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/reservation-essaies",
+      "handler": "reservation-essaie.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/reservation-essaies/count",
+      "handler": "reservation-essaie.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/reservation-essaies/:id",
+      "handler": "reservation-essaie.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/reservation-essaies",
+      "handler": "reservation-essaie.verify",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/reservation-essaies/:id",
+      "handler": "reservation-essaie.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/reservation-essaies/:id",
+      "handler": "reservation-essaie.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_member_members",
+  "info": {
+    "name": "Members",
+    "icon": "calendar-plus"
+  },
+  "options": {},
+  "attributes": {
+    "book_limit": {
+      "type": "integer",
+      "max": 5,
+      "min": 2,
+      "required": true
+    }
+  }
+}

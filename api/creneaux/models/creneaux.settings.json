@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "creneaux",
+  "info": {
+    "name": "Créneaux",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "start": {
+      "type": "time"
+    },
+    "reservations": {
+      "type": "integer",
+      "default": 0,
+      "required": true,
+      "max": 10,
+      "min": 0,
+      "private": false
+    },
+    "entrainement": {
+      "model": "entrainements"
+    },
+    "jour": {
+      "model": "jours"
+    },
+    "reservations_all": {
+      "collection": "reservations"
+    }
+  }
+}

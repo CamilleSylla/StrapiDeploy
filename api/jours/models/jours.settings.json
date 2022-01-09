@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jours",
+  "info": {
+    "name": "jours"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string"
+    }
+  }
+}

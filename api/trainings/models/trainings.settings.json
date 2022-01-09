@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trainings",
+  "info": {
+    "name": "Trainings",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "richtext"
+    },
+    "start": {
+      "type": "time",
+      "required": true
+    },
+    "day": {
+      "type": "enumeration",
+      "enum": [
+        "Lundi",
+        "Mardi",
+        "Mercredi",
+        "Jeudi",
+        "Vendredi",
+        "Samedi",
+        "Dimanche"
+      ],
+      "required": true
+    },
+    "reservations": {
+      "type": "integer",
+      "min": 0,
+      "max": 10,
+      "default": 0,
+      "required": false
+    },
+    "nom": {
+      "type": "enumeration",
+      "enum": [
+        "Crosstraining",
+        "Haltero",
+        "Personnaltrainer",
+        "Rehab",
+        "Fithealthy",
+        "Gym",
+        "Opentraining",
+        "Kids",
+        "Functionnalbodybuilding",
+        "Crossteam"
+      ],
+      "required": true
+    }
+  }
+}

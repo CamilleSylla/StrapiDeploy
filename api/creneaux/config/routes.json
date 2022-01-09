@@ -1,0 +1,68 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/week",
+      "handler": "week.index",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/creneaux",
+      "handler": "creneaux.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/creneaux/all",
+      "handler": "creneaux.reservation_number_limitation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/creneaux/count",
+      "handler": "creneaux.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/creneaux/:id",
+      "handler": "creneaux.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/creneaux",
+      "handler": "creneaux.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/creneaux/:id",
+      "handler": "creneaux.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/creneaux/:id",
+      "handler": "creneaux.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
